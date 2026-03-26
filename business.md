@@ -48,7 +48,7 @@ image: background.png
 </div>
 <br>
 <div align="center" width="50%">
-	<a href = /"https://dataverse.harvard.edu/dataverses/dongwkim/"><img src = "assets/icons/academicons/svg/harvard_dataverse.png" style="width:85px;height:;"></a><a href = ""><img src = "assets/icons/academicons/svg/dataverse.svg" style="width:30;height:30;"></a> <a href="https://osf.io/5y36r/overview"><img src="assets/icons/academicons/svg/osf.svg" width="30"></a> 
+	<a href = /"https://dataverse.harvard.edu/dataverses/dongwkim/"><img src = "assets/icons/academicons/svg/harvard_dataverse.png" style="width:30;height:30;"></a><a href = ""><img src = "assets/icons/academicons/svg/dataverse.svg" style="width:30;height:30;"></a> <a href="https://osf.io/5y36r/overview"><img src="assets/icons/academicons/svg/osf.svg" width="30"></a> 
 </div>
 
 ---
