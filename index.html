@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dong-wkim · Assets</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --radius: 8px;
+      --font: system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header h1 { font-size: 1.25rem; font-weight: 600; }
+    header a { color: var(--accent); text-decoration: none; }
+    header a:hover { color: var(--accent-hover); }
+    main { max-width: 960px; margin: 0 auto; padding: 2rem; }
+    .intro { margin-bottom: 2.5rem; }
+    .intro p { color: var(--muted); margin-top: 0.5rem; }
+    section { margin-bottom: 3rem; }
+    section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .card-preview {
+      background: repeating-conic-gradient(#21262d 0% 25%, #161b22 0% 50%) 0 0 / 16px 16px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      min-height: 80px;
+    }
+    .card-preview img { max-width: 100%; max-height: 64px; }
+    .card-meta { font-size: 0.875rem; }
+    .card-name { font-weight: 600; color: var(--text); }
+    .card-desc { color: var(--muted); font-size: 0.8rem; margin-top: 0.2rem; }
+    .card-links { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+    .card-links a {
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-decoration: none;
+      background: rgba(88, 166, 255, 0.1);
+      border: 1px solid rgba(88, 166, 255, 0.2);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .card-links a:hover {
+      background: rgba(88, 166, 255, 0.2);
+      color: var(--accent-hover);
+    }
+    .usage {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+    .usage h3 { font-size: 0.875rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--muted); }
+    pre {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.75rem;
+      font-size: 0.8rem;
+      overflow-x: auto;
+      color: var(--text);
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1><a href="https://github.com/dong-wkim">dong-wkim</a> · Assets</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:0.25rem;">Static Asset Catalog</h2>
+      <p>Logos, icons, and images hosted here and referenced via raw GitHub URLs.</p>
+    </div>
+
+    <!-- Logos -->
+    <section>
+      <h2>Logos</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-preview">
+            <img src="assets/logos/logo.svg" alt="Logo (dark)" />
+          </div>
+          <div class="card-meta">
+            <div class="card-name">logo.svg</div>
+            <div class="card-desc">Primary logo — dark background</div>
+            <div class="card-links">
+              <a href="assets/logos/logo.svg" target="_blank">View</a>
+              <a href="https://raw.githubusercontent.com/dong-wkim/.github/main/assets/logos/logo.svg" target="_blank">Raw URL</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-preview" style="background:#f0f2f4;">
+            <img src="assets/logos/logo-light.svg" alt="Logo (light)" />
+          </div>
+          <div class="card-meta">
+            <div class="card-name">logo-light.svg</div>
+            <div class="card-desc">Logo variant — light background</div>
+            <div class="card-links">
+              <a href="assets/logos/logo-light.svg" target="_blank">View</a>
+              <a href="https://raw.githubusercontent.com/dong-wkim/.github/main/assets/logos/logo-light.svg" target="_blank">Raw URL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Icons -->
+    <section>
+      <h2>Icons</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-preview">
+            <img src="assets/icons/icon.svg" alt="Icon 64px" />
+          </div>
+          <div class="card-meta">
+            <div class="card-name">icon.svg</div>
+            <div class="card-desc">App icon — 64×64</div>
+            <div class="card-links">
+              <a href="assets/icons/icon.svg" target="_blank">View</a>
+              <a href="https://raw.githubusercontent.com/dong-wkim/.github/main/assets/icons/icon.svg" target="_blank">Raw URL</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-preview">
+            <img src="assets/icons/favicon.svg" alt="Favicon 32px" />
+          </div>
+          <div class="card-meta">
+            <div class="card-name">favicon.svg</div>
+            <div class="card-desc">Favicon — 32×32</div>
+            <div class="card-links">
+              <a href="assets/icons/favicon.svg" target="_blank">View</a>
+              <a href="https://raw.githubusercontent.com/dong-wkim/.github/main/assets/icons/favicon.svg" target="_blank">Raw URL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Usage -->
+    <section>
+      <h2>Usage</h2>
+      <div class="usage">
+        <h3>Reference an asset in Markdown</h3>
+        <pre>![Logo](https://raw.githubusercontent.com/dong-wkim/.github/main/assets/logos/logo.svg)</pre>
+        <h3 style="margin-top:1rem;">Reference an asset in HTML</h3>
+        <pre>&lt;img src="https://raw.githubusercontent.com/dong-wkim/.github/main/assets/logos/logo.svg" alt="Logo" /&gt;</pre>
+        <h3 style="margin-top:1rem;">Adding new assets</h3>
+        <pre>assets/
+  logos/    ← wordmarks and full logo lockups
+  icons/    ← app icons and favicons
+  images/   ← screenshots, banners, and other images</pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hosted on <a href="https://pages.github.com">GitHub Pages</a> · <a href="https://github.com/dong-wkim/.github">View source</a></p>
+  </footer>
+</body>
+</html>
